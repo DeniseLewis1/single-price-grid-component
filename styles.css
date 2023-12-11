@@ -13,7 +13,6 @@ html {
 
 * {
     box-sizing: border-box;
-    /*outline: 2px dashed red;*/
 }
 
 body {
@@ -45,7 +44,7 @@ h3 {
 .container {
     display: flex;
     flex-direction: column;
-    max-width: 375px;
+    width: 375px;
     margin: 50px auto;
 }
 
@@ -55,7 +54,7 @@ h3 {
 
 .one {
     background-color: var(--white);
-    border-radius: 5px 5px 0 0;
+    border-radius: 7px 7px 0 0;
 }
 
 .one > p {
@@ -75,10 +74,6 @@ h3 {
     vertical-align: middle;
 }
 
-.two .month {
-    
-}
-
 .two > button {
     display: block;
     background-color: var(--brightyellow);
@@ -94,7 +89,7 @@ h3 {
 
 .three {
     background-color: var(--cyan);
-    border-radius: 0 0 5px 5px;
+    border-radius: 0 0 7px 7px;
     opacity: 0.75;
     padding-bottom: 5px;
 }
@@ -105,3 +100,41 @@ h3 {
     line-height: 1.5rem;
 }
 
+/******************** Desktop Styles ********************/
+@media only screen and (min-width: 1440px) {
+    h1, h2 {
+        margin: 20px 0;
+    }
+
+    .container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        max-width: 1440px;
+        width: 50%;
+    }
+
+    .item {
+        padding: 20px 40px;
+    }
+
+    .one {
+        grid-column: 1 / span 2;
+    }
+
+    .one > p {
+        font-size: 1.15rem;
+    }
+
+    .two {
+        border-radius: 0 0 0 7px;
+    }
+
+    .two > button {
+        margin-top: 40px;
+        width: 100%;
+    }
+
+    .three {
+        border-radius: 0 0 7px 0;
+    }
+}
