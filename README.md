@@ -25,18 +25,18 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
+Mobile
 
-Mobile:
 ![Mobile screenshot](./screenshot-mobile.png)
 
-Desktop:
+Desktop
+
 ![Desktop screenshot](./screenshot-desktop.png)
 
 ### Links
 
 - [Solution URL](https://github.com/DeniseLewis1/single-price-grid-component)
-- [Live Site URL](https://your-live-site-url.com)
+- [Live Site URL](https://deniselewis1.github.io/single-price-grid-component/)
 
 ## My process
 
