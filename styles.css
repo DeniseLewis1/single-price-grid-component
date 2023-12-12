@@ -109,7 +109,7 @@ h3 {
     .container {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        max-width: 1440px;
+        max-width: 720px;
         width: 50%;
     }
 
@@ -123,6 +123,8 @@ h3 {
 
     .one > p {
         font-size: 1.15rem;
+        line-height: 1.8rem;
+        width: 95%;
     }
 
     .two {
