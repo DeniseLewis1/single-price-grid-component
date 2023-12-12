@@ -20,12 +20,8 @@ body {
     font-weight: 400;
     color: var(--lightgray);
     background-color: var(--lightgray);
-    min-height: 100vh;
-}
-
-h1, h2 {
-    font-weight: 700;
-    margin: 0;
+    max-width: 375px;
+    margin: 0 auto;
 }
 
 h1 {
@@ -35,21 +31,26 @@ h1 {
 h2 {
     color: var(--lightgray);
     font-size: 1.2rem;
+    margin-bottom: 25px;
 }
 
 h3 {
     color: var(--brightyellow);
 }
 
+p {
+    font-size: 1.05rem;
+    line-height: 1.8rem;
+}
+
 .container {
     display: flex;
     flex-direction: column;
-    width: 375px;
     margin: 50px auto;
 }
 
 .item {
-    padding: 25px;
+    padding: 15px 25px;
 }
 
 .one {
@@ -59,8 +60,6 @@ h3 {
 
 .one > p {
     color: var(--grayishblue);
-    line-height: 1.7rem;
-    font-size: 1.05rem;
     margin-bottom: 10px;
 }
 
@@ -69,7 +68,7 @@ h3 {
 }
 
 .two .price {
-    font-size: 2rem;
+    font-size: 2.3rem;
     margin-right: 10px;
     vertical-align: middle;
 }
@@ -77,14 +76,19 @@ h3 {
 .two > button {
     display: block;
     background-color: var(--brightyellow);
-    color: var(--lightgray);
+    color: var(--white);
+    font-family: 'Karla', sans-serif;
     font-weight: 400;
     font-size: 1.1rem;
     border: none;
     border-radius: 5px;
-    margin: 30px auto 0;
+    margin: 25px auto 10px;
     padding: 15px;
-    width: 90%;
+    width: 100%;
+}
+
+.two > button:hover {
+    color: var(--grayishblue);
 }
 
 .three {
@@ -102,19 +106,22 @@ h3 {
 
 /******************** Desktop Styles ********************/
 @media only screen and (min-width: 1440px) {
-    h1, h2 {
-        margin: 20px 0;
+    body {
+        max-width: 1440px;
+    }
+    
+    p {
+        font-size: 1.15rem;
     }
 
     .container {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        max-width: 720px;
         width: 50%;
     }
 
     .item {
-        padding: 20px 40px;
+        padding: 25px 40px;
     }
 
     .one {
@@ -122,8 +129,6 @@ h3 {
     }
 
     .one > p {
-        font-size: 1.15rem;
-        line-height: 1.8rem;
         width: 95%;
     }
 
@@ -132,8 +137,7 @@ h3 {
     }
 
     .two > button {
-        margin-top: 40px;
-        width: 100%;
+        margin-top: 35px;
     }
 
     .three {
